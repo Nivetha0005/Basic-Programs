@@ -1,0 +1,21 @@
+class Box1 {
+	int wi,he,br;
+	Box1(int w,int h,int b){
+		wi=w;he=h;br=b;
+	}
+}
+class Box{
+	 Box1 o; 
+	    Box(Box1 o) { 
+	        this.o = o;
+	    }
+	int main() {
+		System.out.println(o.wi*o.he*o.br);
+		return 0;
+	}
+	public static void main(String[] args) {
+		Box1 o=new Box1(2,3,4);
+		Box o1=new Box(o);
+		o1.main();
+	}
+}
