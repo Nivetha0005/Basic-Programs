@@ -24,6 +24,9 @@ public class ColorSwitch {
 		case 'O':
 			System.out.println("Orange");
 			break;
+		default:
+			System.out.println("no colors available");
+			break;
 		}
 		s.close();
 	}
